@@ -1,26 +1,25 @@
 package com.prisync.service;
 
+import com.prisync.Main;
 import com.prisync.user.User;
 import com.prisync.user.UserId;
 import org.apache.commons.codec.digest.DigestUtils;
 
-import java.io.File;
+import java.io.BufferedReader;
 import java.io.IOException;
-import java.nio.file.*;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class UserService {
 
     public List<String> readUsernamesFromFile() {
         List<String> usernames = new ArrayList<String>();
-
-        String filePath = "./src/main/resources/files/1000.usernames.txt";
-        File file = new File(filePath);
-        Path path = file.toPath();
-
-        try {
-            usernames = Files.readAllLines(path);
+        try (InputStream inputStream = getClass().getResourceAsStream("/files/1000.usernames.txt");
+             BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream))) {
+            usernames = reader.lines().collect(Collectors.toList());
         } catch (IOException e) {
             e.printStackTrace();
         }
