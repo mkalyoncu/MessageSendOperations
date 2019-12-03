@@ -27,8 +27,6 @@ As you see, this package contains more than a username. The app assigns auto inc
 
   
 
-
-
 ### Installation
 
 1. Download the repository files (project) from the download section or clone this project by typing in the bash the following command:  
@@ -36,10 +34,11 @@ As you see, this package contains more than a username. The app assigns auto inc
 git clone https://github.com/mkalyoncu/MessageSendOperations.git
 ``
 2. Import it in Intellij IDEA.  
-3. Make an executable jar from the project with command below  
+3. Find 'rabbitmq.properties' file under the resources directory and modify it with your information
+4. Make an executable jar from the project with command below  
 ``
 mvn install
 ``    
-4. ``` cd target ```  
-5. ``` java -jar MessageSendOperations-jar-with-dependencies.jar ```
+5. ``` cd target ```  
+6. ``` java -jar MessageSendOperations-jar-with-dependencies.jar ```
 
