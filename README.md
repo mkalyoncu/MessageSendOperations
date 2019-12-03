@@ -13,7 +13,7 @@ ProducerService.java converts every User objects to Json strings with Gson libra
 
 EndPoint.java class has written to make channel and connection of message queue effortlessly reachable.  
 
-Properties file externalizes the configuration and to store the key-value pairs of message queue such as IP address, queue name, exchange name, username, password, etc. It can be accessable by getProperty() method from PropertiesReader.java class.
+Properties file externalizes the configuration and store the key-value pairs of message queue such as IP address, queue name, exchange name, username, password, etc. It can be accessable by getProperty() method from PropertiesReader.java class.
 
 
 
