@@ -35,7 +35,7 @@ git clone https://github.com/mkalyoncu/MessageSendOperations.git
 ``
 2. Import it in Intellij IDEA.  
 3. Find 'rabbitmq.properties' file under the resources directory and modify it with your information
-4. Make an executable jar from the project with command below  
+4. Run the app or make an executable jar from the project with command below  
 ``
 mvn install
 ``    
