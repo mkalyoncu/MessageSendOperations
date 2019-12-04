@@ -5,7 +5,7 @@ There is a text file that includes 1000 usernames of a Linux system in the proje
 
 ### Contents
 
-User.java and UserId.java classes were written to make convertion process between String/Json easier. 
+User.java and UserId.java classes were written to make convertion between String and Json easier. 
 
 UserService.java reads 1000.usernames.txt file and placed all of the usernames in a list called 'usernames'. Usernames list was used to create User objects.
 
